@@ -1,0 +1,21 @@
+@import '../../App';
+
+.nav-bar {
+  background: $background-color-sideBar;
+  text-align: center;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  p {
+    color: $title-color-sideBar;
+  }
+
+  a {
+    color: $title-color-sideBar;
+    text-decoration: none;
+  }
+}
