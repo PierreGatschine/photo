@@ -1,20 +1,26 @@
 @import '../../App';
 
+
 .home-page {
 
+    background-color: $background-color;
+    color:$title-color-sideBar;
+      
     .text-zone {
         position: absolute;
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
         max-height: 90%;
-      
+        text-align: start;
+        
         h1 {
-            color: $title-color;
-            //font-size: 53px;
-            //margin: 0;
-            //font-family: 'Coolvetica';
-            //font-weight: 400;
+            color: $title-color-sideBar;
+            font-size: 45px;
+            line-height: 11vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
         }
     }
 }

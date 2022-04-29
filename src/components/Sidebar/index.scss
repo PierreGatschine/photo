@@ -3,7 +3,7 @@
 .nav-bar {
   background: $background-color-sideBar;
   text-align: center;
-  width: 80px;
+  width: 60px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -12,10 +12,15 @@
 
   p {
     color: $title-color-sideBar;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
   }
 
   a {
     color: $title-color-sideBar;
     text-decoration: none;
+    font-size: medium;
   }
 }
