@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const firstNameArray = [ '', 'M', 'a', 'r', 'i', 'e'];
-    const lastNameArray = ['', 'G', 'a', 't', 's', 'c', 'h', 'i', 'n', 'é'];
+    const lastNameArray = ['', 'M', 'a', 'r', 't', 'i', 'n'];
     const jobArray = ['P', 'h', 'o', 't', 'o', 'g', 'r', 'a', 'p', 'h', 'e', 'r', '.'];
 
     /* useEffect(() => {
@@ -43,6 +44,15 @@ const Home = () => {
                         idx={22}
                         />
                     </h1>
+
+                    <h2>
+                        Portrait / Mariage / Maison <br/>
+                        Photo / Video / Drone
+                    </h2>
+
+                    <Link to="/contact" className="flat-button">
+                        CONTACT ME
+                    </Link>
                      
                </div>
            </div>
