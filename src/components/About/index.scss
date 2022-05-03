@@ -1,0 +1,30 @@
+@import '../../App';
+
+.portrait {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    //border-radius: 10px;
+    transition: all 0.2s;
+
+    img {
+        width: 680px;
+        height: 680px;
+        object-fit: cover;
+        object-position: center;
+        //border-radius: $border-radius;
+        filter: grayscale(100%);
+        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &:hover {
+        box-shadow:8px 8px 10px 0 rgba(23, 23, 23, 0.5);
+
+    }
+}

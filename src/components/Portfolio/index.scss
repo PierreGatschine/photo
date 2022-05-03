@@ -1,0 +1,63 @@
+@import '../../App';
+
+.img-zone-left{
+    with: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+         filter: grayscale(50%);
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.img-zone-right{
+    width: 64.5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    cursor: pointer;
+    
+
+    .container {
+        display: flexbox;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 2px;
+        transition: all 0.3s;
+
+    img {
+        width: 200px;
+        height: 210px;
+        object-fit: cover;
+        object-position: bottom;
+        //border-radius: $border-radius;
+        padding: 0 2px;
+        z-index: 1;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+}

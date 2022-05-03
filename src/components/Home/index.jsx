@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
-import './index.scss'
+import Loader from 'react-loaders';
+import './index.scss';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -9,12 +10,11 @@ const Home = () => {
     const lastNameArray = ['', 'M', 'a', 'r', 't', 'i', 'n'];
     const jobArray = ['P', 'h', 'o', 't', 'o', 'g', 'r', 'a', 'p', 'h', 'e', 'r', '.'];
 
-    /* useEffect(() => {
+    useEffect(() => {
         return setTimeout(() => {
-            setLetterClass('text-animate-hover')
-            }, 4000)
-    }, []) */
-
+        setLetterClass('text-animate-hover')
+        }, 4000)
+    }, [])
     return (
         <>
            <div className="container home-page">
@@ -56,6 +56,7 @@ const Home = () => {
                      
                </div>
            </div>
+           <Loader type="ball-scale-ripple-multiple" />
         </>
     );
 };

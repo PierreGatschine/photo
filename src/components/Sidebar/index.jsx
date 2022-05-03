@@ -5,10 +5,11 @@ import LogoName from '../../assets/images/logo-appareil.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faUser, faEnvelope, faCamera } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn, faBehance, faUnsplash } from '@fortawesome/free-brands-svg-icons';
 import './index.scss'
 
 const Sidebar = () => {
-    library.add(faHome, faUser, faEnvelope, faCamera);
+    library.add(faHome, faUser, faEnvelope, faCamera, faLinkedinIn, faBehance, faUnsplash);
     return (
         <div className='nav-bar'>
             <Link className="logo" to="/">
@@ -47,6 +48,35 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faEnvelope}  color='#8D8D8D'/>
           </NavLink>
         </nav> 
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pierregatschine/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} color="#4d4d4e" />
+            </a>
+          </li>
+          <li>
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faBehance} color="#4d4d4e" />
+          </a>
+        </li>
+          <li>
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faUnsplash} color="#4d4d4e" />
+          </a>
+        </li>
+        </ul>
         </div>
     );
 };
