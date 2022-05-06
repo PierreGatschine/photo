@@ -42,8 +42,8 @@
             font-size: 5em;
             line-height: 8vh;
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 800;
+            font-family: $title-h1
+            //font-weight: 800;
         }
 
         h2 {
@@ -51,14 +51,14 @@
             margin-top: 20px;
             font-weight: 400;
             font-size: 15px;
-            font-family: sans-serif;
+            font-family: $paragraph;
             letter-spacing: 3px;
             animation: fadeIn 1s 1.8s backwards;
          }
           p {
             font-size: 13px;
             color: $secondary-color;
-            font-family: sans-serif;
+            font-family:$paragraph;
             font-weight: 400;
             max-width: fit-content;
             animation: pulse 1s;

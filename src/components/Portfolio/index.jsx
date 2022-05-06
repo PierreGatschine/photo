@@ -30,6 +30,7 @@ const Portfolio = () => {
                 </div>
                 <div className="img-zone-right">
                     <div className="container">
+                       
                         <img src={require('../../assets/images/skateMan-unsplash.jpeg')} alt="portrait" />
                         <img src={require('../../assets/images/skateMan-unsplash.jpeg')} alt="portrait" />
                         <img src={require('../../assets/images/skateMan-unsplash.jpeg')} alt="portrait" />
