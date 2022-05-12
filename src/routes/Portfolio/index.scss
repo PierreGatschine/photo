@@ -1,4 +1,4 @@
-//@import '../../App';
+@import '../../app';
 
 .img-zone-left{
     width: 35%;
@@ -25,7 +25,7 @@
 }
 
 .img-zone-right{
-    width: 64.5%;
+    width: 60%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -34,17 +34,20 @@
     cursor: pointer;
     
 
-    .container {
-        display: flexbox;
+    .portfolio-container {
+        
+        display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding: 0 2px;
+        padding: 0 20px;
         transition: all 0.4s;
+    }
+}
 
 
-        img {
+       /*  img {
             width: 200px;
             height: 210px;
             object-fit: cover;
@@ -55,12 +58,10 @@
             &:hover {
             transform: scale(1.02);
         }
-        }
+        } */
 
         
 
-    }
 
 
 
-}

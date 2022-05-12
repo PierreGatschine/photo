@@ -1,16 +1,17 @@
-import React, { useState, useEffect} from 'react';
-import AnimatedLetters from '../AnimatedLetters';
+import React, { useState/* , useEffect */} from 'react';
+import AnimatedLetters from '../../components/AnimatedLetters';
 import Loader from 'react-loaders';
 import './index.scss'
 
 const About = () => {
-    const [letterClass, setLetterClass] = useState('text-animate');
+    const [letterClass, /* setLetterClass */] = useState('text-animate');
 
-    useEffect(() => {
+    /* useEffect(() => {
         return setTimeout(() => {
         setLetterClass('text-animate-hover')
         }, 3000)
-    }, [])
+    }, []) */
+
     return (
         <>
             <div className='container about-page'>

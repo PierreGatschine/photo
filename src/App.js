@@ -1,16 +1,18 @@
-import './App.scss';
 //import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './routes/Layout';
+import Home from './routes/Home';
+import About from './routes/About';
+import Contact from './routes/Contact';
+import Portfolio from './routes/Portfolio';
+
+import './app.scss';
+
+
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
+    <div>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -19,8 +21,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
-      </BrowserRouter>
-    </>
+    </div>
   );
 }
 

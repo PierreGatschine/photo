@@ -1,13 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../Sidebar';
+import Sidebar from '../../components/Sidebar';
 //import Home from '../Home';
 import './index.scss';
 
 const Layout = () => {
     return (
         < div className='app'>
-            <Sidebar />              
+            <Sidebar />
             <div className="page">
                 <Outlet />
             </div>
